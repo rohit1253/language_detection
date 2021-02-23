@@ -2,7 +2,9 @@ import numpy as np
 from nltk import wordpunct_tokenize
 from nltk.corpus import stopwords
 from flask import Flask, render_template,request
-#import pickle
+
+import nltk
+nltk.data.path.append("nltk_data")
 
 app = Flask(__name__)
 #model = pickle.load(open('model.pkl', 'rb'))
